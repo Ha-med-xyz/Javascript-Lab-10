@@ -54,6 +54,13 @@ class store {
         });
         return total;
     }
+    // Method to find and return a product in the inventory array by its name or return null if not found
+    findProductByName(name) {
+        // Utilizes find() to search inventory array for a product by its name
+        let foundProduct = this.inventory.find(product => product.name.toLowerCase() === name.toLowerCase());
+        // Return either the product or null if not found
+        return foundProduct || null;
+    }
 }
 
 // Two instances of perishableProductProperties with sample data
