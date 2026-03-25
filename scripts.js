@@ -63,6 +63,13 @@ class store {
     }
 }
 
-// Two instances of perishableProductProperties with sample data
-const steak = new perishableProductProperties("Steak", 29.99, 1, "2026-03-27")
-const milk = new perishableProductProperties("Milk", 5.48, 2, "2026-04-14")
+// Create 5 products
+
+// Two instances of perishable products with sample data
+const steak = new perishableProductProperties("Steak", 29.99, 1, "2026-03-27");
+const milk = new perishableProductProperties("Milk", 5.48, 2, "2026-04-14");
+
+// Three instances of regular products with sample data
+const football = new productProperties ("Football", 14.99, 8);
+const bike = new productProperties ("Bike", 121.68, 10);
+const jacket = new productProperties ("Jacket", 39.00, 4);
