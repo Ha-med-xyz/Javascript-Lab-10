@@ -87,3 +87,14 @@ productProperties.applyDiscount(fancyStore.inventory, 0.15);
 
 // Print total inventory value after discount
 console.log(`Total inventory value (after discount): $${fancyStore.getInventoryValue().toFixed(2)}`);
+
+// Search for product by name
+let searchedProduct = fancyStore.findProductByName("steak");
+    if (searchedProduct) {
+        console.log("Product found: " + searchedProduct.toString());
+    } else {
+        console.log("No product found.");
+    }
+// Test for product not in inventory
+let missingObject = fancyStore.findProductByName("Coal");
+console.log(missingObject ? ` Found: ${missing.toString()}` : "Product not found.");
