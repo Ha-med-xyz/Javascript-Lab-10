@@ -75,6 +75,15 @@ const bike = new productProperties ("Bike", 121.68, 10);
 const jacket = new productProperties ("Jacket", 39.00, 4);
 
 // Create a new object for store
-const store = new store();
+const fancyStore = new store();
 // Add products to store
-[football, bike, jacket, steak, milk].forEach(product => store.addProduct(product));
+[football, bike, jacket, steak, milk].forEach(product => fancyStore.addProduct(product));
+
+// Print total inventory value before discount
+console.log(`Total inventory value (pre-discount): $${fancyStore.getInventoryValue().toFixed(2)}`);
+
+// Apply discount to total inventory value
+productProperties.applyDiscount(fancyStore.inventory, 0.15);
+
+// Print total inventory value after discount
+console.log(`Total inventory value (after discount): $${fancyStore.getInventoryValue().toFixed(2)}`);
