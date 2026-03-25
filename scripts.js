@@ -23,16 +23,23 @@ class productProperties {
 }
 
 class perishableProductProperties extends productProperties {
+    // Initialize new property expiration date alonside other properties
     constructor(name, price, quantity, expirationDate) {
+        // Use super to call parent constructor within subclass
         super(name, price, quantity);
         this.expirationDate = expirationDate;
     }
+    // Override toString()
     toString() {
         return `${super.toString()}, Expiration Date: ${this.expirationDate}`
     }
 }
 
 class store {
+    // Initialize inventory array
+    constructor() {
+        this.inventory = [];
+    }
 }
 
 // Two instances of perishableProductProperties with sample data
