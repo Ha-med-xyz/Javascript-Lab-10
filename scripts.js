@@ -6,7 +6,7 @@ class productProperties {
         this.quantity = quantity;
     }
     // Method to return total value of product in stock (quantity * price)
-    getTotalValue(){
+    getTotalValue() {
         return this.price * this.quantity;
     }
     // Method to return a string description of the product
@@ -18,5 +18,6 @@ class productProperties {
 class perishableProductProperties extends productProperties {
     constructor(name, price, quantity, expirationDate) {
         super(name, price, quantity);
+        this.expirationDate = expirationDate;
     }
-    }
+}
