@@ -14,7 +14,7 @@ class productProperties {
         return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`
     }
 
-    applyDiscount(products, discount){
+    static applyDiscount(products, discount){
     }
 }
 
