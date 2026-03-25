@@ -70,9 +70,9 @@ const steak = new perishableProductProperties("Steak", 29.99, 1, "2026-03-27");
 const milk = new perishableProductProperties("Milk", 5.48, 2, "2026-04-14");
 
 // Three instances of regular products with sample data
-const football = new productProperties ("Football", 14.99, 8);
-const bike = new productProperties ("Bike", 121.68, 10);
-const jacket = new productProperties ("Jacket", 39.00, 4);
+const football = new productProperties("Football", 14.99, 8);
+const bike = new productProperties("Bike", 121.68, 10);
+const jacket = new productProperties("Jacket", 39.00, 4);
 
 // Create a new object for store
 const fancyStore = new store();
@@ -90,11 +90,11 @@ console.log(`Total inventory value (after discount): $${fancyStore.getInventoryV
 
 // Search for product by name
 let searchedProduct = fancyStore.findProductByName("steak");
-    if (searchedProduct) {
-        console.log("Product found: " + searchedProduct.toString());
-    } else {
-        console.log("No product found.");
-    }
+if (searchedProduct) {
+    console.log("Product found: " + searchedProduct.toString());
+} else {
+    console.log("No product found.");
+}
 // Test for product not in inventory
 let missingObject = fancyStore.findProductByName("Coal");
 console.log(missingObject ? ` Found: ${missing.toString()}` : "Product not found.");
