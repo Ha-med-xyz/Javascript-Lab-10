@@ -73,3 +73,8 @@ const milk = new perishableProductProperties("Milk", 5.48, 2, "2026-04-14");
 const football = new productProperties ("Football", 14.99, 8);
 const bike = new productProperties ("Bike", 121.68, 10);
 const jacket = new productProperties ("Jacket", 39.00, 4);
+
+// Create a new object for store
+const store = new store();
+// Add products to store
+[football, bike, jacket, steak, milk].forEach(product => store.addProduct(product));
