@@ -32,6 +32,9 @@ class perishableProductProperties extends productProperties {
     }
 }
 
+class store {
+}
+
 // Two instances of perishableProductProperties with sample data
 const steak = new perishableProductProperties("Steak", 29.99, 1, "2026-03-27")
 const milk = new perishableProductProperties("Milk", 5.48, 2, "2026-04-14")
