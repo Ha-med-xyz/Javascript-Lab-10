@@ -40,9 +40,19 @@ class store {
     constructor() {
         this.inventory = [];
     }
-    // Method to push product to inventory array
+    // Method to push product into inventory array
     addProduct(product) {
         this.inventory.push(product);
+    }
+    // Method to return the total value of products in inventory by iterating over each item in the array
+    getInventoryValue() {
+        // Initial variable
+        let total = 0;
+        this.inventory.forEach(product => {
+            // Calls method on each product to get its value (price * quantity) and adds to total
+            total += product.getTotalValue();
+        });
+        return total;
     }
 }
 
