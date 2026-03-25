@@ -40,6 +40,10 @@ class store {
     constructor() {
         this.inventory = [];
     }
+    // Method to push product to inventory array
+    addProduct(product) {
+        this.inventory.push(product);
+    }
 }
 
 // Two instances of perishableProductProperties with sample data
